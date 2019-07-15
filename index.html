@@ -1,70 +1,96 @@
-
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE HTML>
+<html lang = "es">
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Página de ejemplo del MOOC de LINUX - UPM.">
-    <!--Información sobre la página: datos del alumno-->
-    <meta name="JSacris" content="José Luis Sacristán">
-
-    <!--Título: con los datos del alumno-->
-    <title>José Luis Sacristán</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset=utf-8 />
+    <meta name="HTML5" content="Web sobre documentos HTML" />
+    <link rel="stylesheet" href="css/estilo_mod1.css">
+   <title>Secciones y líneas generales de un documento HTML5</title>
   </head>
+  <body>
+    <div id="principal">
+      
+      <header id="CabeceraPagina" class="sombra">
+        <hgroup>
+          <h1 id="TitleMain">Secciones y l&iacute;neas generales de un documento HTML5</h1>
+        </hgroup>
+      </header>
+      
+      <section id=sobreContxita>
+      <aside>
+      <p>La especificaci&oacute;n HTML5 trae muchos nuevos elementos a los desarrolladores web, permiti&eacute;ndoles describir la estructura de un documento web con sem&aacute;ntica estandarizada. Este documento describe estos elementos y c&oacute;mo usarlos para definir el perfil de cualquier documento</p>
+      </aside>
+      </section>
 
-  <body onLoad="alert('Bienvenido a la web de JSacris')">
-    <div class="container header-bar">
-      <!--Foto del alumno-->
-      <h3>José Luis Sacristán <span><img style="width: 214px; height: 164px;" class='img-circle' alt="Nombre y Apellido(s)" src="img/foto.jpg" align="right"></span></h3>
-      <p>
-        <!--Datos del alumno: perfil profesional-->
-        Técnico<br>
-        Soporte Técnico<br>
-        Mensajería Corta (SMS y MMS)
-      </p>
-      <address>
-        <!--Datos del alumno: correo electrónico-->
-        <span class='glyphicon glyphicon-pencil'></span> jl.sacristana@gmail.com <br>
-      </address>
-
-      <!--Datos del alumno: perfíl en las redes-->
-      <p><a href="http://twitter.com/usuario" target="blank"><img src="img/twitter-icon.jpg" width=25></a>
-      <a href="http://github.com/JSacris" target="blank"><img src="img/github-icon.png" width=25></a>
-      <a href="https://es.linkedin.com/in/usuario" target="blank"><img src="img/linkedin-icon.png" width=25></a>
-      <!--Datos del alumno: web de formación online-->
-      <a href="https://www.miriadax.net" target="blank"><img src="img/miriadax.jpeg" width=25></a>
-      <a href="https://www.edx.org/es" target="blank"><img src="img/edx.png" width=25></a>
-    </div>
-
-    <div class="container">
-      <div class='row'>
-        <div class='col-sm-8'>
-          <br>
-          <!--Datos del alumno: descripción profesional y formativa-->
-          <p>Soporte Técnico en el departamento de Mensajería Corta. Se está produciendo un proceso de renovación de tecnologías y funciones del personal, ante la posible necesidad de adquisición de nuevos conocimientos, se aconseja al personal realizar corsos de introducción en diferentes áreas de conocimiento: UNIX-Linux, programación C++, Java, etc. </p>
+      <section id=problemasHtml> 
+        <article>  
+          <header>
+            <hgroup>
+              <h2>Problemas resueltos por HTML5</h2>
+            </hgroup>
+          </header>
           
-          <p>Los conocimientos de programación, en mi caso, los adquirí de forma autodidacta, o a través de curso cortos (unas semanas). No son profundos, se acomodaban a las necesidades del momento y a las funciones realizadas (uso frecuente de guías realizadas por compañeros expertos). Documentación con comandos específicos de guías proporcionadas por los fabricantes. Pretendo llevar a cabo un proceso de aprendizaje metódico: UNIX-Linux, Java, C++, manejo de archivos en repositorios para transmisión del conocimiento en el equipo y trabajo en grupo (distribuido geográficamente).</p>
-          
-          <!--Datos del alumno: cursos en web de formación miridax y edx-->
-          <h3>Cursos</h3>
-          <table class='table table-striped'>
-            <tr><td><a href="https://www.miriadax.net" target="blank">Introducción a Linux como entorno de desarrollo de sistemas software</a>.</td></tr>
-            <tr><td><a href="https://www.edx.org/es" target="blank">Diseña, fabrica y programa tu propio robot</a>.</td></tr>
-            <tr><td><a href="https://www.miriadax.net" target="blank">Introducción a la programación. Descubre el lenguaje de la era digital</a>.</td></tr>
-            <tr><td><a href="https://www.miriadax.net" target="blank">Desarrollo de aplicaciones HTML5 y para dispositivos móviles Firefox O.S</a>.</td></tr>
-            <tr><td><a href="https://www.miriadax.net" target="blank">Leadership for Change. Liderezgo en tiempos de cambio</a>.</td></tr>
-            <tr><td><a href="https://www.miriadax.net" target="blank">Técnicas de creatividad</a>.</td></tr>
-          </table>
+          <p>La definici&oacute;n de la estructura de un documento en HTML 4 y su algoritmo de perfilado es muy tosco y genera numerosos problemas:</p>
+
+          <div  id="ContenidoCentral">
+            <ul>
+            <li type="1">HTML5 quita la necesidad de elementos <a href="http://w3c.github.io/html-reference/div.html#div">&lt;div&gt;</a> para definir secciones sem&aacute;nticas sin definir valores espec&iacute;ficos para los atributos class, introduciendo un nuevo elemento, <a href="http://w3c.github.io/html-reference/section.html#section">&lt;section&gt;</a>, el elemento de secci&oacute;n HTML.</li>
+
+            <li type="1"><p>Mezclar varios documentos es dif&iacute;cil: la inclusi&oacute;n de un sub-documento en un documento principal. Esto se resuelve en HTML5 con los elementos de seccionado (<a href="http://w3c.github.io/html-reference/article.html#article">&lt;article&gt;</a>, <a href="http://w3c.github.io/html-reference/section.html#section">&lt;section&gt;</a>, <a href="http://w3c.github.io/html-reference/nav.html#nav">&lt;nav&gt;</a> y <a href="http://w3c.github.io/html-reference/aside.html#aside">&lt;aside&gt;</a>) son siempre subsecciones de su secci&oacute;n ancestra m&aacute;s cercana.</p>
+     
+            <li type="1"><p>HTML5 introduce el elemento <a href="http://w3c.github.io/html-reference/hgroup.html#hgroup">&lt;hgroup&gt;</a> que oculta todos los elementos de cabecera excepto el primero de m&aacute;s alto rango (por ejemplo, <a href="http://w3c.github.io/html-reference/hgroup.html#hgroup">&lt;hgroup&gt;</a><a href="http://w3c.github.io/html-reference/h1.html#h1">&lt;h1&gt;</a>Justine<a href="http://w3c.github.io/html-reference/h1.html#h1">&lt;&sol;h1&gt;</a><a href="http://w3c.github.io/html-reference/h2.html#h2">&lt;h2&gt;</a>Les Malheurs de la Vertu<a href="http://w3c.github.io/html-reference/h2.html#h2">&lt;&sol;h2&gt;</a><a href="http://w3c.github.io/html-reference/hgroup.html#hgroup">&lt;&sol;hgroup&gt;</a> crea el perfil 1. Justine).</p></li></li>
+            
+            <li type="1"><p>Un documento puede tener secciones especiales conteniendo informaci&oacute;n relacionado que no es parte del flujo principal. HTML5 introduce el elemento <a href="http://w3c.github.io/html-reference/aside.html#aside">&lt;aside&gt;</a> permitiendo a dichas secciones no ser parte del perfil principal.</p></li>
+            
+            <li type="1"><p>Hay informaci&oacute;n relacionada no al documento pero si al sitio entero, como logos, men&uacute;s, tablas de contenidos, o informaci&oacute;n de derechos de autor y notas legales. Para ese prop&oacute;sito, HTML5 introduce tres elementos de secci&oacute;n espec&iacute;ficos: <a href="http://w3c.github.io/html-reference/nav.html#nav">&lt;nav&gt;</a> para colecciones de enlaces, como una tabla de contenidos, <a href="http://w3c.github.io/html-reference/footer.html#footer">&lt;footer&gt;</a> y <a href="http://w3c.github.io/html-reference/header.html#header">&lt;header&gt;</a> informaci&oacute;n relacionada con el sitio.</p></li>
+            </ul>
+          </div>
+
+          <p>De manera m&aacute;s general, HTML5 trae precisi&oacute;n a las caracter&iacute;sticas de seccionado y cabecera, permitiendo a los perfiles de documento ser predecibles y usados por el navegador para mejorar la experiencia de usuario.</p>
+       
+        <header>
+          <hgroup>
+            <h2>El algoritmo de perfilado de HTML5</h2>
+            <h3>Definiendo secciones en HTML5</h3>
+          </hgroup>
+        </header>
+        <p>Todo el contenido incluido dentro del elemento <a href="http://w3c.github.io/html-reference/body.html#body">&lt;body&gt;</a> es parte de una secci&oacute;n. Las secciones en HTML5 pueden ser anidadas. Adem&aacute;s de la secci&oacute;n principal, definida por el elemento <a href="http://w3c.github.io/html-reference/body.html#body">&lt;body&gt;</a>, los l&iacute;mites de la secci&oacute;n son definidos expl&iacute;cita o impl&iacute;citamente. La secciones definidas expl&iacute;citamente son el contenido definido en las etiquetas <a href="http://w3c.github.io/html-reference/body.html#body">&lt;body&gt;</a>, <a href="http://w3c.github.io/html-reference/section.html#section">&lt;section&gt;</a>, <a href="http://w3c.github.io/html-reference/article.html#article">&lt;article&gt;</a>, <a href="http://w3c.github.io/html-reference/aside.html#aside">&lt;aside&gt;</a>, <a href="http://w3c.github.io/html-reference/footer.html#footer">&lt;footer&gt;</a>, <a href="http://w3c.github.io/html-reference/header.html#header">&lt;header&gt;</a>, y <a href="http://w3c.github.io/html-reference/nav.html#nav">&lt;nav&gt;</a>. Nota: Cada secci&oacute;n puede tener su propia jerarqu&iacute;a de cabeceras. Por lo tanto, incluso una secci&oacute;n anidada puede tener un elemento <a href="http://w3c.github.io/html-reference/h1.html#h1">&lt;h1&gt;</a>. Consulte tambi&eacute;n Definiendo cabeceras en HTML5.</p>
+
+       </section>
+       
+      <section>
+        <header>
+          <hgroup>
+            <h2>Ejemplo:</h2>
+          </hgroup>
+        </header>
+        <div class="ejemplo">
+          <ol>
+          <li class="sangrado1">&lt;section&gt;</li>
+              <li class="sangrado2"> &lt;h1&gt;Forest elephants&lt;&sol;h1&gt;</li>
+          <li class="sangrado1">&lt;section&gt;</li>
+              <li class="sangrado2"> &lt;h1&gt;Introduction&lt;&sol;h1&gt;</li>
+              <li class="sangrado2"> &lt;p&gt;In this section, we discuss the lesser known forest elephants.</li>
+          <li class="sangrado1">&lt;&sol;section&gt;</li>
+          <li class="sangrado1"> &lt;section&gt;</li>
+              <li class="sangrado2">&lt;h1&gt;Habitat&lt;&sol;h1&gt;</li>
+              <li class="sangrado2">&lt;p&gt;Forest elephants do not live in trees but among them.</li>
+          <li class="sangrado1"> &lt;&sol;section&gt;</li>
+          <li class="sangrado1"> &lt;aside&gt;</li>
+              <li class="sangrado2">&lt;p&gt;advertising block</li>
+              <li class="sangrado2">&lt;&sol;aside&gt;</li>
+          <li class="sangrado1">&lt;&sol;section&gt;</li>
+          <li class="sangrado1">&lt;footer&gt;</li>
+              <li class="sangrado2"> &lt;p&gt;(c) 2010 The Example company</li>
+          <li class="sangrado1">&lt;&sol;footer&gt;</li>
+          </ol>
         </div>
-      </div>
+      </section>
 
-      <footer class="footer">
-        <!--Datos del alumno: firma de la página web y fecha-->
-        <p>&copy; José Luis Sacristán - 2018</p>
-      </footer>
-
+    <br>
+    <footer>
+      Diseñado por <small> &copy; 2019 Miriadax -</small>
+      Contacto: <address> <a href = "mailto:info@miriadax.com">info@miriadax.es</a></address>
+    </footer>
     </div>
   </body>
 </html>
