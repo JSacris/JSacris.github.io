@@ -123,3 +123,18 @@ body {
     width: 16.66666667%;
   }
 }
+
+
+ /*Nuevo*/
+
+#lienzo{
+  background-color: #CCCCCC;
+  margin-left: 105px; 
+ }
+
+ /*Sombras*/
+.sombra{
+ text-shadow:4px 4px 4px #333;
+ -webkit-text-stroke:2px #063;
+ -webkit-text-fill-color:#99CC00;
+ }
