@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Estilo del cuerpo del documentio */
+body, html {
+	background-color:   #f9e79f;
+	font-family: 'Lato', sans-serif;
+	height: 100%;
+	width: 98%;
+	margin: 10px;
+	padding: 0px;
+}
+
+/* Estilo de la cabecera */
+#CabeceraPagina{
+	background-color: #abebc6;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+}
+#TitleMain h1{
+  font-size: 350%;
+  /*line-height: 10%;*/
+  /*font-variant:small-caps;*/
+}
+
+/* Estilo del contenido: lista de problemas */
+#ContenidoCentral {
+    margin: 0px 10% 10px 30px;
+    /*margin: 8px 10px 0px 22%;*/
+    position: relative;
+    text-align: left;
+    width: 80%;
+}
+
+/* Estilo del contenido: recuadro con código ejemplo */
+.ejemplo {
+    font-family: monospace;
+    color: #000080;
+    font-size: 10pt;
+    padding: 1em;
+    border: 1px solid;
+    margin: 10px 0px 0px;
+    width: 60%;
+    background: #ededed;
+    clear: both;
+}
+.sangrado1 {
+    text-indent: 0px;
+    list-style-type:none;
+}
+.sangrado2 {
+    text-indent: 15px;
+    list-style-type:none;
+}
+
+/* Estilo de pie de página */
+footer {
+	font-family: sans-serif;
+	font-size: 0.8em;
+	color: #FFFFFF;
+	background-color: #666;
+	padding: 0.3rem;
+	padding-left: 2.2em;
+}
+
+/* Estilo puntos de ruptura: tipos de pantalla */
+@media (orientation: landscape) {
+section {
+	grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+}
+aside {
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+}
+nav ul {
+	flex-direction: row;
+}
+a {
+	margin-right:0.2em;
+}
+}
+@media (orientation: portrait) {
+section {
+	grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+aside {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+}
+nav ul {
+	flex-direction: column;
+}
+nav a {
+	margin-bottom:0.2em;
+}
+}
